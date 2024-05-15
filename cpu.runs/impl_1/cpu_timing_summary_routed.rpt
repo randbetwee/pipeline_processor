@@ -1,0 +1,665 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 14:36:15 2022
+| Host         : LAPTOP-0I44SIOD running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file cpu_timing_summary_routed.rpt -pb cpu_timing_summary_routed.pb -rpx cpu_timing_summary_routed.rpx -warn_on_violation
+| Design       : cpu
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There is 1 register/latch pin with no clock driven by root clock pin: btc (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: btl (HIGH)
+
+ There are 66 register/latch pins with no clock driven by root clock pin: clk_w5 (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemAluResult_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemRd_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemRd_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemRd_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemRd_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemRd_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemjr_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: EXMEM/exmemregWrite_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: IDEX/controlOut_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: IDEX/controlOut_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: IDEX/controlOut_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/controlOut_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data1out_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/data2out_reg[9]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[0]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[1]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[2]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[3]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[4]/Q (HIGH)
+
+ There are 35 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/extenout_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rdout_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rdout_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rdout_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rdout_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rdout_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rsout_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rsout_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rsout_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rsout_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rsout_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rtout_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rtout_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rtout_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rtout_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: IDEX/rtout_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/aluOut_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/jalOut_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/jrOut_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/memtoregOut_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/pcOut_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/rdOut_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/rdOut_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/rdOut_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/rdOut_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/rdOut_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[12]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[13]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[18]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[19]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[20]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[21]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[22]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[23]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[24]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[25]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[26]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[27]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[28]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[29]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[30]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/readDataOut_reg[9]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: MEMWB/regwriteOut_reg/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: _AluCon/aluCon_reg[0]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: _AluCon/aluCon_reg[1]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: _AluCon/aluCon_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: _alu/temp_reg[31]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: _alu/temp_reg[32]/Q (HIGH)
+
+ There are 721 register/latch pins with no clock driven by root clock pin: clk_div/divclk2_reg/Q (HIGH)
+
+ There are 30 register/latch pins with no clock driven by root clock pin: clk_div/divclk_reg/Q (HIGH)
+
+ There are 721 register/latch pins with no clock driven by root clock pin: flag_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 2961 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 28 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+         NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
